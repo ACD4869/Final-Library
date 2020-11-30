@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>oo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+
+		
+			
+			
+			
+			<servlet>
+				    <servlet-name>Borrow_Book_Member_Controller</servlet-name>
+				    <jsp-file>/library/staff/borrow/controller/Borrow_Book_Member_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Borrow_Book_Member_Controller</servlet-name>
+				    <url-pattern>/Borrow_Book_Member_Controller/*</url-pattern>   
+				</servlet-mapping>
+		
+			
+			
+			
+			
+			<servlet>
+				    <servlet-name>Borrow_Book_From_Member</servlet-name>
+				    <jsp-file>/library/staff/borrow/view/Borrow_Book_From_Member.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Borrow_Book_From_Member</servlet-name>
+				    <url-pattern>/borrow-book-member/*</url-pattern>   
+				</servlet-mapping>
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<servlet>
+				    <servlet-name>Delete_Serial_Copy_Controller</servlet-name>
+				    <jsp-file>/library/staff/copy/controller/Delete_Serial_Copy_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Delete_Serial_Copy_Controller</servlet-name>
+				    <url-pattern>/delete-serial-controller/*</url-pattern>   
+				</servlet-mapping>
+		
+			
+			
+			
+			
+			
+				<servlet>
+				    <servlet-name>Edit_Profile_Controller</servlet-name>
+				    <jsp-file>/library/staff/profile/controller/Edit_Profile_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Edit_Profile_Controller</servlet-name>
+				    <url-pattern>/edit-profile-controller/*</url-pattern>   
+				</servlet-mapping>
+		
+			
+			
+			
+			<servlet>
+				    <servlet-name>Staff_Edit_Profile</servlet-name>
+				    <jsp-file>/library/staff/profile/view/Edit_Profile.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Staff_Edit_Profile</servlet-name>
+				    <url-pattern>/edit-profile-staff/*</url-pattern>   
+				</servlet-mapping>
+		
+			
+			
+			
+			
+			
+			
+			<servlet>
+				    <servlet-name>View_All_Pending_History</servlet-name>
+				    <jsp-file>/library/staff/borrow/view/View_All_Pending_History.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>View_All_Pending_History</servlet-name>
+				    <url-pattern>/view-all-pending-borrow/*</url-pattern>   
+				</servlet-mapping>
+		
+			
+			
+				<servlet>
+				    <servlet-name>View_All_Member</servlet-name>
+				    <jsp-file>/library/staff/Member/view/View_All_Member.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>View_All_Member</servlet-name>
+				    <url-pattern>/view-all-member/*</url-pattern>   
+				</servlet-mapping>
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				<servlet>
+				    <servlet-name>Edit_Author_Controller</servlet-name>
+				    <jsp-file>/library/staff/author/controller/Edit_Author_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Edit_Author_Controller</servlet-name>
+				    <url-pattern>/edit-author-controller/*</url-pattern>   
+				</servlet-mapping>
+		
+			
+			
+			
+			
+			
+				<servlet>
+				    <servlet-name>Edit_Author</servlet-name>
+				    <jsp-file>/library/staff/author/view/Edit_Author.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Edit_Author</servlet-name>
+				    <url-pattern>/edit-author/*</url-pattern>   
+				</servlet-mapping>
+		
+			
+			
+			
+			
+			
+			
+			
+			
+
+					<servlet>
+				    <servlet-name>Delete_This_Borrow_Controller</servlet-name>
+				    <jsp-file>/library/staff/borrow/controller/Delete_This_Borrow_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Delete_This_Borrow_Controller</servlet-name>
+				    <url-pattern>/delete-borrow-controller/*</url-pattern>   
+				</servlet-mapping>
+		
+
+
+ 				<servlet>
+				    <servlet-name>Edit_Member_Controller</servlet-name>
+				    <jsp-file>/library/staff/Member/controller/Edit_Member_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Edit_Member_Controller</servlet-name>
+				    <url-pattern>/edit-profile-member-controller/*</url-pattern>   
+				</servlet-mapping>
+		
+
+
+
+
+
+
+ 				<servlet>
+				    <servlet-name>Edit_Complete_Details_Of_Member</servlet-name>
+				    <jsp-file>/library/staff/Member/view/Edit_Complete_Details_Of_Member.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Edit_Complete_Details_Of_Member</servlet-name>
+				    <url-pattern>/edit-profile-member/*</url-pattern>   
+				</servlet-mapping>
+		
+		
+
+
+
+ 
+  <servlet>
+				    <servlet-name>Search_Borrow_History</servlet-name>
+				    <jsp-file>/library/staff/borrow/view/Search_Borrow_History.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Search_Borrow_History</servlet-name>
+				    <url-pattern>/search-borrow-history/*</url-pattern>   
+				</servlet-mapping>
+		
+		
+		
+ 			
+ <servlet>
+				    <servlet-name>View_All_Book</servlet-name>
+				    <jsp-file>/library/staff/book/view/View_All_Book.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>View_All_Book</servlet-name>
+				    <url-pattern>/view-all-books/*</url-pattern>   
+				</servlet-mapping>
+				
+				
+				
+				
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      <servlet>
+				    <servlet-name>Edit_Serial_Copy_Controller</servlet-name>
+				    <jsp-file>/library/staff/copy/controller/Edit_Serial_Copy_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Edit_Serial_Copy_Controller</servlet-name>
+				    <url-pattern>/edit-serial-copy-controller/*</url-pattern>   
+				</servlet-mapping>
+	
+     
+      <servlet>
+				    <servlet-name>Edit_Serial_Copy</servlet-name>
+				    <jsp-file>/library/staff/copy/view/Edit_Serial_Copy.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Edit_Serial_Copy</servlet-name>
+				    <url-pattern>/edit-serial-copy/*</url-pattern>   
+				</servlet-mapping>
+	
+     
+     
+     
+     <servlet>
+				    <servlet-name>Complete_Borrow_History</servlet-name>
+				    <jsp-file>/library/staff/borrow/view/Complete_Borrow_History.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Complete_Borrow_History</servlet-name>
+				    <url-pattern>/complete-borrow-history/*</url-pattern>   
+				</servlet-mapping>
+	
+     
+     
+     
+     
+     
+     
+    <servlet>
+				    <servlet-name>Update_Borrow_Book_Controller</servlet-name>
+				    <jsp-file>/library/staff/borrow/controller/Update_Borrow_Book_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Update_Borrow_Book_Controller</servlet-name>
+				    <url-pattern>/update-borrow-book-controller/*</url-pattern>   
+				</servlet-mapping>
+	
+  
+  
+  
+  
+   
+   
+    <servlet>
+				    <servlet-name>Update_Borrow_Book</servlet-name>
+				    <jsp-file>/library/staff/borrow/view/Update_Borrow_Book.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Update_Borrow_Book</servlet-name>
+				    <url-pattern>/update-borrow-book/*</url-pattern>   
+				</servlet-mapping>
+	
+   
+   
+   
+   
+   	 <servlet>
+				    <servlet-name>Borrow_History_Member</servlet-name>
+				    <jsp-file>/library/staff/borrow/view/Borrow_History_Member.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Borrow_History_Member</servlet-name>
+				    <url-pattern>/borrow-history-member/*</url-pattern>   
+				</servlet-mapping>
+	
+   
+  				<servlet>
+				    <servlet-name>Borrow_History</servlet-name>
+				    <jsp-file>/library/admin/borrow/view/Borrow_History.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Borrow_History</servlet-name>
+				    <url-pattern>/borrow-history/*</url-pattern>   
+				</servlet-mapping>
+	
+  
+  
+  				<servlet>
+				    <servlet-name>Borrow_Book_Controller</servlet-name>
+				    <jsp-file>/library/staff/borrow/controller/Borrow_Book_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Borrow_Book_Controller</servlet-name>
+				    <url-pattern>/borrow-book-controller/*</url-pattern>   
+				</servlet-mapping>
+	
+  
+  
+  
+  
+  
+  
+   				<servlet>
+				    <servlet-name>Borrow_Book</servlet-name>
+				    <jsp-file>/library/staff/borrow/view/Borrow_Book.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Borrow_Book</servlet-name>
+				    <url-pattern>/borrow-book/*</url-pattern>   
+				</servlet-mapping>
+	
+  
+  
+  
+  
+  
+  
+  
+  
+     <servlet>
+				    <servlet-name>Edit_Book_Controller</servlet-name>
+				    <jsp-file>/library/staff/book/controller/Edit_Book_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Edit_Book_Controller</servlet-name>
+				    <url-pattern>/edit-book-controller/*</url-pattern>   
+				</servlet-mapping>
+	
+  
+  
+  
+    <servlet>
+				    <servlet-name>Edit_Book</servlet-name>
+				    <jsp-file>/library/staff/book/view/Edit_Book.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Edit_Book</servlet-name>
+				    <url-pattern>/edit-book/*</url-pattern>   
+				</servlet-mapping>
+	
+  
+  
+  
+  
+  
+     <servlet>
+				    <servlet-name>Complete_Details_Of_Member</servlet-name>
+				    <jsp-file>/library/staff/Member/view/Complete_Details_Of_Member.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Complete_Details_Of_Member</servlet-name>
+				    <url-pattern>/complete-details-member/*</url-pattern>   
+				</servlet-mapping>
+	
+  
+  
+  
+  
+  
+  
+  
+  
+   <servlet>
+				    <servlet-name>Add_Copy_Controller</servlet-name>
+				    <jsp-file>/library/staff/copy/controller/Add_Copy_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Add_Copy_Controller</servlet-name>
+				    <url-pattern>/copy-book-controller/*</url-pattern>   
+				</servlet-mapping>
+	
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <servlet>
+				    <servlet-name>Copy_Books</servlet-name>
+				    <jsp-file>/library/staff/copy/view/Copy_Books.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Copy_Books</servlet-name>
+				    <url-pattern>/copy-books/*</url-pattern>   
+				</servlet-mapping>
+	
+  
+  
+  <servlet>
+				    <servlet-name>Add_Member_Controller</servlet-name>
+				    <jsp-file>/library/staff/Member/controller/Add_Member_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Add_Member_Controller</servlet-name>
+				    <url-pattern>/add-member-controller/*</url-pattern>   
+				</servlet-mapping>
+		
+  
+  
+  
+    <servlet>
+				    <servlet-name>Add_Member</servlet-name>
+				    <jsp-file>/library/staff/Member/view/Add_Member.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Add_Member</servlet-name>
+				    <url-pattern>/add-member/*</url-pattern>   
+				</servlet-mapping>
+		
+  
+  
+  
+  
+  
+   <servlet>
+				    <servlet-name>Complete_Details_Of_Book</servlet-name>
+				    <jsp-file>/library/staff/book/view/Complete_Details_Of_Book.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Complete_Details_Of_Book</servlet-name>
+				    <url-pattern>/complete-details-of-book/*</url-pattern>   
+				</servlet-mapping>
+		
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <servlet>
+				    <servlet-name>Add_Author_Controller</servlet-name>
+				    <jsp-file>/library/staff/author/controller/Add_Author_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Add_Author_Controller</servlet-name>
+				    <url-pattern>/add-author-controller/*</url-pattern>   
+				</servlet-mapping>
+				
+				
+				
+				
+
+
+
+
+
+
+
+
+
+
+				<servlet>
+				    <servlet-name>Add_Author</servlet-name>
+				    <jsp-file>/library/staff/author/view/Add_Author.jsp</jsp-file>
+				</servlet><servlet-mapping> 
+				    <servlet-name>Add_Author</servlet-name>
+				    <url-pattern>/add-author/*</url-pattern>   
+				</servlet-mapping>
+	<servlet>
+		<servlet-name>View_All_Librarian</servlet-name>
+		<jsp-file>/library/staff/librarian/view/View_All_Librarian.jsp</jsp-file>
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>View_All_Librarian</servlet-name>
+		<url-pattern>/view-all-librarian/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Add_Librarian_Controller</servlet-name>
+		<jsp-file>/library/staff/librarian/controller/Add_Librarian_Controller.jsp</jsp-file>
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add_Librarian_Controller</servlet-name>
+		<url-pattern>/add-librarian-controller/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Edit_Librarian_Controller</servlet-name>
+		<jsp-file>/library/staff/librarian/controller/Edit_Librarian_Controller.jsp</jsp-file>
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Edit_Librarian_Controller</servlet-name>
+		<url-pattern>/edit-librarian-controller/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Add_Librarian</servlet-name>
+		<jsp-file>/library/staff/librarian/view/Add_Librarian.jsp</jsp-file>
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add_Librarian</servlet-name>
+		<url-pattern>/add-librarian/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Edit_Librarian</servlet-name>
+		<jsp-file>/library/staff/librarian/view/Edit_Librarian.jsp</jsp-file>
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Edit_Librarian</servlet-name>
+		<url-pattern>/edit-librarian/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+					<servlet-name>Add_Publisher_Controller</servlet-name>
+					<jsp-file>/library/staff/publisher/controller/Add_Publisher_Controller.jsp</jsp-file>
+					
+				</servlet><servlet-mapping>
+					<servlet-name>Add_Publisher_Controller</servlet-name>
+					<url-pattern>/add-publisher-controller/*</url-pattern>
+				</servlet-mapping><servlet>
+					<servlet-name>Edit_Publisher_Controller</servlet-name>
+					<jsp-file>/library/staff/publisher/controller/Edit_Publisher_Controller.jsp</jsp-file>
+					
+				</servlet><servlet-mapping>
+					<servlet-name>Edit_Publisher_Controller</servlet-name>
+					<url-pattern>/edit-publisher-controller/*</url-pattern>
+				</servlet-mapping>
+	<servlet>
+		<servlet-name>Add_Publisher</servlet-name>
+		<jsp-file>/library/staff/publisher/view/Add_Publisher.jsp</jsp-file>
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add_Publisher</servlet-name>
+		<url-pattern>/add-publisher/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Edit_Publisher</servlet-name>
+		<jsp-file>/library/staff/publisher/view/Edit_Publisher.jsp</jsp-file>
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Edit_Publisher</servlet-name>
+		<url-pattern>/edit-publisher/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+				    <servlet-name>Add_Category_Controller</servlet-name>
+				    <jsp-file>/library/staff/category/controller/Add_Category_Controller.jsp</jsp-file>
+				</servlet><servlet-mapping>
+				    <servlet-name>Add_Category_Controller</servlet-name>
+				    <url-pattern>/staff-add-category-controller</url-pattern>   
+				</servlet-mapping><servlet>
+				    <servlet-name>Add_Category</servlet-name>
+				    <jsp-file>/library/staff/category/view/Add_Category.jsp</jsp-file>
+				</servlet><servlet-mapping>
+				    <servlet-name>Add_Category</servlet-name>
+				    <url-pattern>/staff-add-category</url-pattern>   
+				</servlet-mapping><servlet>
+				    <servlet-name>Edit_Category_Controller</servlet-name>
+				    <jsp-file>/library/staff/category/controller/Edit_Category_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping> 
+				    <servlet-name>Edit_Category_Controller</servlet-name>
+				    <url-pattern>/edit-category-controller/*</url-pattern>   
+				</servlet-mapping>
+		
+		
+  
+  
+  
+  
+  
+  	<servlet>
+				    <servlet-name>Edit_Category</servlet-name>
+				    <jsp-file>/library/staff/category/view/Edit_Category.jsp</jsp-file>
+				</servlet>
+				 
+				
+		
+		
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  					
+				 
+				
+		
+		
+		
+		
+  				
+				 
+				
+		
+  
+  
+  
+  
+  				
+				 
+				
+		
+  
+   
+  
+  
+  
+  
+  
+  
+  
+   			<servlet-mapping> 
+				    <servlet-name>Edit_Category</servlet-name>
+				    <url-pattern>/edit-category/*</url-pattern>   
+				</servlet-mapping><servlet>
+				    <servlet-name>Add_Book_Controller</servlet-name>
+				    <jsp-file>/library/staff/book/controller/Add_Book_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping>
+				    <servlet-name>Add_Book_Controller</servlet-name>
+				    <url-pattern>/staff-add-book-controller</url-pattern>   
+				</servlet-mapping>
+		
+		
+		
+		
+  
+   			<servlet>
+				    <servlet-name>STAFF_Add_Book</servlet-name>
+				    <jsp-file>/library/staff/book/view/Add_Book.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping>
+				    <servlet-name>STAFF_Add_Book</servlet-name>
+				    <url-pattern>/staff-add-book/*</url-pattern>   
+				</servlet-mapping>
+		
+  
+  
+  
+  
+  			 <servlet>
+				    <servlet-name>Staff_Sign_In_Controller</servlet-name>
+				    <jsp-file>/library/staff/profile/controller/Staff_Sign_In_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping>
+				    <servlet-name>Staff_Sign_In_Controller</servlet-name>
+				    <url-pattern>/staff-sign-in</url-pattern>   
+				</servlet-mapping>
+		
+  
+  
+  
+  
+  
+  
+  				 <servlet>
+				    <servlet-name>Staff_Sign_Out_Controller</servlet-name>
+				    <jsp-file>/library/staff/common/Staff_Sign_Out_Controller.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping>
+				    <servlet-name>Staff_Sign_Out_Controller</servlet-name>
+				    <url-pattern>/Staff_Sign_Out_Controller</url-pattern>   
+				</servlet-mapping>
+		
+  
+  
+  		 <servlet>
+				    <servlet-name>Staff_Home_Page</servlet-name>
+				    <jsp-file>/library/staff/profile/view/Staff_Home_Page.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping>
+				    <servlet-name>Staff_Home_Page</servlet-name>
+				    <url-pattern>/staff-home</url-pattern>   
+				</servlet-mapping>
+		
+  
+  
+  				 <servlet>
+				    <servlet-name>index</servlet-name>
+				    <jsp-file>/index.jsp</jsp-file>
+				</servlet>
+				 
+				<servlet-mapping>
+				    <servlet-name>index</servlet-name>
+				    <url-pattern>/</url-pattern>   
+				</servlet-mapping>
+		
+  
+  
+  
+  
+  
+  <servlet-mapping>  
+        <servlet-name>default</servlet-name>  
+        <url-pattern>*.css</url-pattern>  
+    </servlet-mapping>
+  
+  
+  
+    <servlet-mapping>  
+        <servlet-name>default</servlet-name>  
+        <url-pattern>*.js</url-pattern>  
+    </servlet-mapping> 
+ 
+ 
+ <servlet-mapping>  
+        <servlet-name>default</servlet-name>  
+        <url-pattern>*.jpg</url-pattern>  
+    </servlet-mapping> 
+    
+     <servlet-mapping>  
+        <servlet-name>default</servlet-name>  
+        <url-pattern>*.gif</url-pattern>  
+    </servlet-mapping> 
+ 
+  <servlet-mapping>  
+        <servlet-name>default</servlet-name>  
+        <url-pattern>*.png</url-pattern>  
+    </servlet-mapping> 
+ 
+	
+	
+	  <servlet-mapping>  
+        <servlet-name>default</servlet-name>  
+        <url-pattern>*.eot</url-pattern>  
+    </servlet-mapping> 
+ 
+	
+	
+	
+	  <servlet-mapping>  
+        <servlet-name>default</servlet-name>  
+        <url-pattern>*.woff</url-pattern>  
+    </servlet-mapping> 
+  
+  
+  
+  
+  
+  
+</web-app>
