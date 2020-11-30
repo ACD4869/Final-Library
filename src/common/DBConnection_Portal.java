@@ -6,8 +6,7 @@ import java.sql.SQLException;
 
 public class DBConnection_Portal {
 	
-	//This function returns the connection
-	//This function returns the connection	
+	
 	public Connection getConnection(){
 		Connection connection=null;
 		System.out.println("Connection called");
@@ -24,4 +23,6 @@ public class DBConnection_Portal {
 	}
 
 	
+
 }
+
