@@ -318,5 +318,54 @@ public class Member_Table_Model {
 	return list;
 
 	}	
+	public int delete_member(Member_Use_Bean obj_Member_Use_Bean){
+		Connection connection=null;
+		DBConnection_Portal obj_DBConnection_SMS_Portal=new DBConnection_Portal();
+		connection=obj_DBConnection_SMS_Portal.getConnection();
+		PreparedStatement ps=null;
+		ResultSet rs=null;
+		int flag=0;
+	try { 
+		
+					String query="delete from member where member_id=?";
+					ps=connection.prepareStatement(query);
+					ps.setString(1, obj_Member_Use_Bean.getMember_id());
+					System.out.println(ps);
+					flag=ps.executeUpdate();
+					
+			
+		 
+	 }catch(Exception e){
+		e.printStackTrace();
+	}finally{
+		if(connection!=null){
+			try {
+					connection.close();
+				}
+			 	catch (Exception e2) {
+			 	}
+		}
+		if(ps!=null){
+			try {
+				
+				ps.close();
+				}
+			 catch (Exception e2) {
+			}
+		}
+		if(rs!=null){
+			try {
+				
+				rs.close();
+				}
+			 catch (Exception e2) {
+			}
+		}
+	
+}
+	
+	return flag;
+
+	}
 	
 }

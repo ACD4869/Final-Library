@@ -123,7 +123,7 @@
                                                 <td><%=temp_count++ %></td>
                                                 <td><%=obj_Category_Use_Bean.getCategory_name() %></td>
                                                 <td><a href="<%=Common_Things.url %>/edit-category/?sl_no=<%=obj_Category_Use_Bean.getId_no() %>&n=<%=obj_Category_Use_Bean.getCategory_name() %>&d=" class="btn btn-success btn-xs">Edit</a>
-                                                <a href="<%=Common_Things.url %>/delete-category/?sl_no=<%=obj_Category_Use_Bean.getId_no() %>&n=<%=obj_Category_Use_Bean.getCategory_name() %>&d=" class="btn btn-success btn-xs">Delete</a> </td>
+                                                <a href="<%=Common_Things.url %>/delete-category/?sl_no=<%=obj_Category_Use_Bean.getId_no() %>" class="btn btn-success btn-xs">Delete</a> </td>
                                             </tr>
 
                                 	<%		

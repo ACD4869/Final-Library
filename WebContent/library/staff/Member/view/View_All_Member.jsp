@@ -105,8 +105,8 @@
 	                                               }	
                                             	   %>
                                                	</td>
-                                               	<td><a href="<%=Common_Things.url %>/complete-details-member/?lm=<%=obj_Member_Use_Bean.getMember_id() %>" class="btn btn-primary btn-xs">Detail</a></td>
-                                               	<td><a href="<%=Common_Things.url %>/-delete-member/?lm=<%=obj_Member_Use_Bean.getMember_id() %>" class="btn btn-primary btn-xs">Delete</a></td>
+                                               	<td><a href="<%=Common_Things.url %>/complete-details-member/?lm=<%=obj_Member_Use_Bean.getMember_id() %>" class="btn btn-primary btn-xs">Detail</a>
+                                               	<a href="<%=Common_Things.url %>/delete-member/?lm=<%=obj_Member_Use_Bean.getMember_id() %>" class="btn btn-primary btn-xs">Delete</a></td>
                                                
                                             </tr>
                                 	<%		

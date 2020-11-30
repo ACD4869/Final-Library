@@ -290,6 +290,7 @@
                                              </td>
                                                <td>
                                                 <a href="<%=Common_Things.url %>/edit-serial-copy/?s=<%=obj_Book_Use_Bean.getId_no() %>" class="btn btn-success btn-xs">Edit</a>
+                                                <a href="<%=Common_Things.url %>/delete-serial-copy/?s=<%=obj_Book_Use_Bean.getId_no() %>" class="btn btn-success btn-xs">Delete</a>
                                                
                                                
                                                </td>

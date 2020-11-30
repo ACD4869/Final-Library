@@ -36,7 +36,7 @@ public class Create_Table {
 						"password varchar(100) not null," +
 						"primary key(sl_no))");
 				
-				st.execute("insert into staff(user_name,password) values('staff','staff123')");
+				st.execute("insert into staff(user_name,password) values('staff','password')");
 				
 				st.execute("create table publisher(" +
 						"id_no int(255) auto_increment," +

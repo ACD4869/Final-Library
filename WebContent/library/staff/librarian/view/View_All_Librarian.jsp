@@ -100,7 +100,10 @@
                                                	<td><%=obj_Librarian_Use_Bean.getLibrarian_name() %></td> 
                                                	<td><%=obj_Librarian_Use_Bean.getTelephone() %></td>
                                                	<td><%=obj_Librarian_Use_Bean.getNumber_id() %></td>
-                                               	<td> <a href="<%=Common_Things.url %>/complete-details-librarian/?lm=<%=obj_Librarian_Use_Bean.getLibrarian_id() %>" class="btn btn-primary btn-xs">Detail</a></td>
+                                               	<td> 
+                                               	<a href="<%=Common_Things.url %>/complete-details-librarian/?lm=<%=obj_Librarian_Use_Bean.getLibrarian_id() %>" class="btn btn-primary btn-xs">Detail</a>
+                                               	<a href="<%=Common_Things.url %>/delete-librarian/?lm=<%=obj_Librarian_Use_Bean.getLibrarian_id() %>" class="btn btn-primary btn-xs">Delete</a>
+                                               	</td>
                                             </tr>
                                 	<%		
                                 			

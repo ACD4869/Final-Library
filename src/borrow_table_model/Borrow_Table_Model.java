@@ -90,10 +90,8 @@ public class Borrow_Table_Model {
 	}	
 	
 	public String  get_days_delay( String dateStart,String dateStop) {
-		// String dateStart = "28-09-2014";
-			//String dateStop = "28-10-2014";
+		
 		 	String days=null;
-			//HH converts hour in 24 hours format (0-23), day calculation
 			SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
 
 			Date d1 = null;

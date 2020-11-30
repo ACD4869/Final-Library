@@ -181,29 +181,18 @@ public class Category_Table {
 				DBConnection_Portal obj_DBConnection_SMS_Portal=new DBConnection_Portal();
 				connection=obj_DBConnection_SMS_Portal.getConnection();
 				PreparedStatement ps=null;
-				
+				ResultSet rs=null;
 				int flag=0;
 			try { 
 				
-				String query="delete from category where id_no=?";
-				ps=connection.prepareStatement(query);
-				
-				ps.setString(2,obj_Category_Use_Bean.getId_no());
-				System.out.println(ps);
-				flag=ps.executeUpdate();
-				
+							String query="delete from category where id_no=?";
+							ps=connection.prepareStatement(query);
+							ps.setString(1, obj_Category_Use_Bean.getId_no());
+							System.out.println(ps);
+							flag=ps.executeUpdate();
+							
 					
-				query="update category_table set count=count-1 " +
-						"where id_no=?";
-
-				ps=connection.prepareStatement(query);
-				ps.setString(2,obj_Category_Use_Bean.getId_no());
-				System.out.println(ps);
-				ps.executeUpdate();
-				
-			
-				
-				
+				 
 			 }catch(Exception e){
 				e.printStackTrace();
 			}finally{
@@ -222,11 +211,19 @@ public class Category_Table {
 					 catch (Exception e2) {
 					}
 				}
+				if(rs!=null){
+					try {
+						
+						rs.close();
+						}
+					 catch (Exception e2) {
+					}
+				}
 			
 		}
 			
 			return flag;
 
-			}	
+			}		
 			
 }

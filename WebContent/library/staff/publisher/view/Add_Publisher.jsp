@@ -109,7 +109,9 @@
                                    			 <tr>
                                                 <td><%=temp_count++ %></td>
                                                 <td><%=obj_Publisher_Use_Bean.getPublisher_name() %></td>
-                                                <td><a href="<%=Common_Things.url  %>/edit-publisher/?sl_no=<%=obj_Publisher_Use_Bean.getId_no() %>&n=<%=obj_Publisher_Use_Bean.getPublisher_name() %>&d=" class="btn btn-success btn-xs">Edit</a> </td>
+                                                <td><a href="<%=Common_Things.url  %>/edit-publisher/?sl_no=<%=obj_Publisher_Use_Bean.getId_no() %>&n=<%=obj_Publisher_Use_Bean.getPublisher_name() %>&d=" class="btn btn-success btn-xs">Edit</a>
+                                                <a href="<%=Common_Things.url  %>/delete-publisher/?sl_no=<%=obj_Publisher_Use_Bean.getId_no() %>&n=<%=obj_Publisher_Use_Bean.getPublisher_name() %>&d=" class="btn btn-success btn-xs">Delete</a>
+                                                 </td>
                                             </tr>
                                 	<%		
                                 			

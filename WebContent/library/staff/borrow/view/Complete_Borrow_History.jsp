@@ -172,17 +172,16 @@
                                 	                                    
                                    			  <tr>
                                                 <td><%=temp_count++ %></td>
-                                                <td><%=obj_Borrow_Use_Bean.getMember_name() %></a>          </td>
+                                                <td><%=obj_Borrow_Use_Bean.getMember_name() %></td>
                                                	<td><%=obj_Borrow_Use_Bean.getBook_title() %></td>
-                                               	<td> 
-                                               <%=obj_Borrow_Use_Bean.getBarcode() %>
-                                               
-                                               </td>
+                                               	<td><%=obj_Borrow_Use_Bean.getBarcode() %></td>
                                                <td><%=obj_Borrow_Use_Bean.getBorrow_date() %></td>
-                                               
                                                <td><%=obj_Borrow_Use_Bean.getReturn_date() %></td>
                                                <td><%=obj_Borrow_Use_Bean.getStatus() %></td>
-                                               <td><a href="<%=Common_Things.url %>/update-borrow-book/?lololo=<%=obj_Borrow_Use_Bean.getBorrow_id_no() %> " class="btn btn-success btn-xs">Update</a> </td> 
+                                               <td>
+                                               <a href="<%=Common_Things.url %>/update-borrow-book/?lololo=<%=obj_Borrow_Use_Bean.getBorrow_id_no() %> " class="btn btn-success btn-xs">Update</a> 
+                                               <a href="<%=Common_Things.url %>/delete-borrow/?id=<%=obj_Borrow_Use_Bean.getBorrow_id_no() %> " class="btn btn-success btn-xs">delete</a>
+                                               </td> 
                                                
                                             </tr>
                                    

@@ -701,12 +701,75 @@
 				    <servlet-name>STAFF_Add_Book</servlet-name>
 				    <url-pattern>/staff-add-book/*</url-pattern>   
 				</servlet-mapping>
-		
-  
-  
-  
-  
-  			 <servlet>
+				<servlet>
+					<servlet-name>Delete_Author</servlet-name>
+					<jsp-file>/library/staff/author/controller/Delete_Author_Controller.jsp</jsp-file>
+					
+				</servlet><servlet-mapping>
+					<servlet-name>Delete_Author</servlet-name>
+					<url-pattern>/delete-author/*</url-pattern>
+				</servlet-mapping><servlet>
+					<servlet-name>Delete_Borrow</servlet-name>
+					<jsp-file>/library/staff/borrow/controller/Delete_This_Borrow_Controller.jsp</jsp-file>
+					
+				</servlet>
+				
+				<servlet-mapping>
+					<servlet-name>Delete_Borrow</servlet-name>
+					<url-pattern>/delete-borrow/*</url-pattern>
+				</servlet-mapping>
+				<servlet>
+					<servlet-name>Delete_Category</servlet-name>
+					<jsp-file>/library/staff/category/controller/Delete_Category_Controller.jsp</jsp-file>
+					
+				</servlet>
+				<servlet-mapping>
+					<servlet-name>Delete_Category</servlet-name>
+					<url-pattern>/delete-category/*</url-pattern>
+				</servlet-mapping>
+				<servlet>
+					<servlet-name>Delete_Copy</servlet-name>
+					<jsp-file>/library/staff/copy/controller/Delete_Serial_Copy_Controller.jsp</jsp-file>
+					
+				</servlet>
+				<servlet-mapping>
+					<servlet-name>Delete_Copy</servlet-name>
+					<url-pattern>/delete-serial-copy/*</url-pattern>
+				</servlet-mapping>
+				<servlet>
+					<servlet-name>Delete_Librarian</servlet-name>
+					<jsp-file>/library/staff/librarian/controller/Delete_Librarian_Controller.jsp</jsp-file>
+					
+				</servlet>
+				<servlet-mapping>
+					<servlet-name>Delete_Librarian</servlet-name>
+					<url-pattern>/delete-librarian/*</url-pattern>
+				</servlet-mapping>
+				<servlet>
+					<servlet-name>Delete_Member</servlet-name>
+					<jsp-file>/library/staff/Member/controller/Delete_Member_Controller.jsp</jsp-file>
+					
+				</servlet>
+				<servlet-mapping>
+					<servlet-name>Delete_Member</servlet-name>
+					<url-pattern>/delete-member/*</url-pattern>
+				</servlet-mapping>
+				<servlet>
+					<servlet-name>Delete_Publisher</servlet-name>
+					<jsp-file>/library/staff/publisher/controller/Delete_Publisher_Controller.jsp</jsp-file>
+					
+				</servlet>
+				<servlet-mapping>
+					<servlet-name>Delete_Publisher</servlet-name>
+					<url-pattern>/delete-publisher/*</url-pattern>
+				</servlet-mapping>
+				
+
+
+
+
+
+				<servlet>
 				    <servlet-name>Staff_Sign_In_Controller</servlet-name>
 				    <jsp-file>/library/staff/profile/controller/Staff_Sign_In_Controller.jsp</jsp-file>
 				</servlet>

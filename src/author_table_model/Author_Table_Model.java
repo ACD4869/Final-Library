@@ -117,7 +117,56 @@ public class Author_Table_Model {
 	
 	return flag;
 
-	}	
+	}
+	public int delete_author(Author_Use_Bean obj_Author_Use_Bean){
+		Connection connection=null;
+		DBConnection_Portal obj_DBConnection_SMS_Portal=new DBConnection_Portal();
+		connection=obj_DBConnection_SMS_Portal.getConnection();
+		PreparedStatement ps=null;
+		ResultSet rs=null;
+		int flag=0;
+	try { 
+		
+					String query="delete from author where id_no=?";
+					ps=connection.prepareStatement(query);
+					ps.setString(1, obj_Author_Use_Bean.getId_no());
+					System.out.println(ps);
+					flag=ps.executeUpdate();
+					
+			
+		 
+	 }catch(Exception e){
+		e.printStackTrace();
+	}finally{
+		if(connection!=null){
+			try {
+					connection.close();
+				}
+			 	catch (Exception e2) {
+			 	}
+		}
+		if(ps!=null){
+			try {
+				
+				ps.close();
+				}
+			 catch (Exception e2) {
+			}
+		}
+		if(rs!=null){
+			try {
+				
+				rs.close();
+				}
+			 catch (Exception e2) {
+			}
+		}
+	
+}
+	
+	return flag;
+
+	}
 	
 			public List<Author_Use_Bean> get_all_authors(){
 				Connection connection=null;

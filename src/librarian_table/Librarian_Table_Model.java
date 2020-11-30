@@ -277,7 +277,7 @@ public class Librarian_Table_Model {
 		List<Librarian_Use_Bean> list=new ArrayList<Librarian_Use_Bean>();
 	try { 
 		
-		String query="select * from librarian order by librarian_name limit "+(lim*100)+",100";
+		String query="select * from librarian order by librarian_name asc limit "+(lim*100)+",100";
 		ps=connection.prepareStatement(query);
 
 		System.out.println(ps);
@@ -318,5 +318,54 @@ public class Librarian_Table_Model {
 	return list;
 
 	}	
+	public int delete_librarian(Librarian_Use_Bean obj_Librarian_Use_Bean){
+		Connection connection=null;
+		DBConnection_Portal obj_DBConnection_SMS_Portal=new DBConnection_Portal();
+		connection=obj_DBConnection_SMS_Portal.getConnection();
+		PreparedStatement ps=null;
+		ResultSet rs=null;
+		int flag=0;
+	try { 
+		
+					String query="delete from librarian where librarian_id=?";
+					ps=connection.prepareStatement(query);
+					ps.setString(1, obj_Librarian_Use_Bean.getLibrarian_id());
+					System.out.println(ps);
+					flag=ps.executeUpdate();
+					
+			
+		 
+	 }catch(Exception e){
+		e.printStackTrace();
+	}finally{
+		if(connection!=null){
+			try {
+					connection.close();
+				}
+			 	catch (Exception e2) {
+			 	}
+		}
+		if(ps!=null){
+			try {
+				
+				ps.close();
+				}
+			 catch (Exception e2) {
+			}
+		}
+		if(rs!=null){
+			try {
+				
+				rs.close();
+				}
+			 catch (Exception e2) {
+			}
+		}
+	
+}
+	
+	return flag;
+
+	}
 	
 }

@@ -37,17 +37,18 @@
                     <div class="col-lg-6">
 
                     		<%
-							String message=(String)session.getAttribute("add_atuhor_message");
-							if(message!=null){
-							%> 
+                    			String message=(String)session.getAttribute("add_atuhor_message");
+                    		                    							if(message!=null){
+                    		%> 
 								
 								 <div class="alert alert-success">
                                         <%=message%>
                                     </div>
 
 
-							<%			session.removeAttribute("add_atuhor_message");
-							}
+							<%
+								session.removeAttribute("add_atuhor_message");
+																	}
 							%>
 
                                             <section class="panel">
@@ -102,25 +103,25 @@
                                            
                                         
                                  
-                                	<% 
-                                	Author_Table_Model obj_Author_Table_Model=new Author_Table_Model();  
-                       	                  	List<Author_Use_Bean> list_author=obj_Author_Table_Model.get_all_authors();
-                       	                                	 
-                       	                                	
-                       	                                	if(list_author!=null){
-                       	                                		Iterator<Author_Use_Bean> it_list_author=list_author.iterator();
-                       	                                		Author_Use_Bean obj_Author_Use_Bean=new Author_Use_Bean();
-                       	                                	int temp_count=1;
-                       	                                		while(it_list_author.hasNext()){
-                       	                                			obj_Author_Use_Bean=it_list_author.next();
-                           	%>
+                                	<%
+                                                                                                                                                    		Author_Table_Model obj_Author_Table=new Author_Table_Model();  
+                                                                                                                                                    	                                                                                                                                                    	                       	                  	List<Author_Use_Bean> list_author=obj_Author_Table.get_all_authors();
+                                                                                                                                                    	                                                                                                                                                    	                       	                                	 
+                                                                                                                                                    	                                                                                                                                                    	                       	                                	
+                                                                                                                                                    	                                                                                                                                                    	                       	                                	if(list_author!=null){
+                                                                                                                                                    	                                                                                                                                                    	                       	                                		Iterator<Author_Use_Bean> it_list_author=list_author.iterator();
+                                                                                                                                                    	                                                                                                                                                    	                       	                                		Author_Use_Bean obj_Author_Use_Bean=new Author_Use_Bean();
+                                                                                                                                                    	                                                                                                                                                    	                       	                                	int temp_count=1;
+                                                                                                                                                    	                                                                                                                                                    	                       	                                		while(it_list_author.hasNext()){
+                                                                                                                                                    	                                                                                                                                                    	                       	                                			obj_Author_Use_Bean=it_list_author.next();
+                                                                                                                                                    	%>
 
                                 	                                   
                                    			 <tr>
                                                 <td><%=temp_count++ %></td>
                                                 <td><%=obj_Author_Use_Bean.getAuthor_name() %></td>
-                                                <td><a href="<%=Common_Things.url  %>/edit-author/?sl_no=<%=obj_Author_Use_Bean.getId_no() %>&n=<%=obj_Author_Use_Bean.getAuthor_name() %>&d=" class="btn btn-success btn-xs">Edit</a>
-                                                	<a href="<%=Common_Things.url  %>/delete-author/?sl_no=<%=obj_Author_Use_Bean.getId_no() %>&n=<%=obj_Author_Use_Bean.getAuthor_name() %>&d=" class="btn btn-success btn-xs">Delete</a>
+                                                <td><a href="<%=Common_Things.url  %>/edit-author/?id_no=<%=obj_Author_Use_Bean.getId_no() %>&n=<%=obj_Author_Use_Bean.getAuthor_name() %>" class="btn btn-success btn-xs">Edit</a>
+                                                	<a href="<%=Common_Things.url  %>/delete-author/?id_no=<%=obj_Author_Use_Bean.getId_no() %>" class="btn btn-success btn-xs">Delete</a>
                                                  </td>
                                             </tr>
 
