@@ -6,8 +6,7 @@ import java.sql.SQLException;
 
 public class DBConnection_Portal {
 	
-	//This function returns the connection
-	//This function returns the connection	
+	
 	public Connection getConnection(){
 		Connection connection=null;
 		System.out.println("Connection called");
@@ -25,4 +24,3 @@ public class DBConnection_Portal {
 
 	
 }
-//connection = DriverManager.getConnection("jdbc:mysql://ec2-50-19-213-178.compute-1.amazonaws.com:3306/doha","doha", "doha");
