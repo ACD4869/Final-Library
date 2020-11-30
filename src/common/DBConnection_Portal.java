@@ -13,7 +13,7 @@ public class DBConnection_Portal {
 		System.out.println("Connection called");
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/library","root", "APTX-4869");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/library","root", "root");
 		
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
