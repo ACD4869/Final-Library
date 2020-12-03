@@ -1,11 +1,15 @@
 package launch;
 
 import java.io.File;
+<<<<<<< HEAD
 import org.apache.catalina.WebResourceRoot;
 import org.apache.catalina.core.StandardContext;
 import org.apache.catalina.startup.Tomcat;
 import org.apache.catalina.webresources.DirResourceSet;
 import org.apache.catalina.webresources.StandardRoot;
+=======
+import org.apache.catalina.startup.Tomcat;
+>>>>>>> 75fd52cfcaa8845a28971c2a3a8927b4ffcc78d8
 
 public class Main {
 
